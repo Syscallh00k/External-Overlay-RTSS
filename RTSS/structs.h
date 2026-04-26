@@ -20,6 +20,27 @@ typedef struct VIDEO_CAPTURE_PARAM
     DWORD   dwPrerecordTimeLimit;
 } VIDEO_CAPTURE_PARAM, *LPVIDEO_CAPTURE_PARAM;
 
+
+struct Colors {
+    static constexpr DWORD White       = 0xFFFFFF;
+    static constexpr DWORD Black       = 0x000000;
+    static constexpr DWORD Red         = 0xFF0000;
+    static constexpr DWORD Green       = 0x00FF00;
+    static constexpr DWORD Blue        = 0x0000FF;
+    static constexpr DWORD Yellow      = 0xFFFF00;
+    static constexpr DWORD Cyan        = 0x00FFFF;
+    static constexpr DWORD Magenta     = 0xFF00FF;
+    static constexpr DWORD Orange      = 0xFF8800;
+    static constexpr DWORD Pink        = 0xFF66AA;
+    static constexpr DWORD Purple      = 0xAA00FF;
+    static constexpr DWORD Lime        = 0x88FF00;
+    static constexpr DWORD Teal        = 0x008888;
+
+    static constexpr DWORD Gray        = 0x888888;
+    static constexpr DWORD DarkGray    = 0x444444;
+    static constexpr DWORD LightGray   = 0xCCCCCC;
+};
+
 #define OSDFLAG_UPDATED         0x00000001
 #define STATFLAG_RECORD         0x00000001
 
